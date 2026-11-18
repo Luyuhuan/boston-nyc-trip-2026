@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#201e2b" />
+  <meta name="description" content="2026年11月21日至28日：波士顿与纽约，两个朋友的一场秋冬旅行。" />
+  <title>我们去旅行吧｜Boston → New York 2026</title>
+  <style>
+    :root { --ink:#20212c; --muted:#686d7c; --line:#e8e8ee; --paper:#fffefa; --warm:#fff4ed; --coral:#eb755e; --blue:#576bb6; --violet:#6f63a6; --teal:#287d73; --shadow:0 18px 60px rgba(32,33,44,.08); }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;color:var(--ink);background:#faf9f7;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans SC","Microsoft YaHei",sans-serif;font-size:15px;line-height:1.66}
+    a{color:inherit;text-decoration:none}
+    button{font-family:inherit;cursor:pointer}
+    button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid #f0a46b;outline-offset:3px}
+    .shell{max-width:1120px;margin:0 auto;padding:0 24px}
+    .topnav{height:68px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .brand{font-weight:850;letter-spacing:-.035em;display:flex;align-items:center;gap:9px;font-size:17px}
+    .brand-mark{width:31px;height:31px;border-radius:11px;background:#eb755e;display:grid;place-items:center;color:white;font-size:18px}
+    .nav-links{display:flex;align-items:center;gap:22px;font-size:13px;font-weight:650;color:#5e6170}
+    .nav-links a:hover{color:var(--coral)}
+    .hero{border-radius:27px;background:radial-gradient(circle at 87% 13%,#5b5682 0,#312e4d 43%,#211f33 78%);color:white;min-height:385px;overflow:hidden;position:relative;box-shadow:0 18px 45px rgba(44,39,70,.17)}
+    .hero-inner{position:relative;z-index:2;padding:53px 56px 32px;max-width:730px}
+    .eyebrow{font-size:11px;letter-spacing:.23em;font-weight:750;text-transform:uppercase;color:#f5b8aa}
+    h1{font-weight:850;font-size:clamp(38px,5vw,62px);line-height:1.14;letter-spacing:-.055em;margin:16px 0}
+    h1 .outline{color:#ffcba2}
+    .hero-sub{font-size:15px;color:#e0dfea;max-width:430px;line-height:1.9;margin:0}
+    .hero-badges{display:flex;gap:9px;flex-wrap:wrap;margin-top:30px}
+    .hero-badges span{border:1px solid #ffffff36;background:#ffffff13;border-radius:999px;padding:7px 12px;font-size:12px;font-weight:650}
+    .hero-art{position:absolute;right:-5px;bottom:0;width:50%;height:100%;opacity:.95}
+    .hero-art svg{display:block;width:100%;height:100%}
+    .head-metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;max-width:700px;margin:-25px 34px 36px;position:relative;z-index:4}
+    .metric{box-shadow:0 10px 32px rgba(42,41,59,.08);background:white;border:1px solid #eeeef2;padding:15px 20px;border-radius:16px}
+    .metric small{display:block;color:var(--muted);font-size:11px;font-weight:650}
+    .metric strong{display:block;font-size:22px;line-height:1.25;letter-spacing:-.04em;margin-top:3px}
+    main{padding-bottom:80px}
+    .section{margin-top:38px;scroll-margin-top:20px}
+    .section-head{display:flex;justify-content:space-between;align-items:end;gap:16px;margin-bottom:16px}
+    h2{font-size:25px;letter-spacing:-.035em;line-height:1.3;margin:0}
+    .sub{font-size:13px;color:var(--muted);margin:5px 0 0}
+    .small-label{font-size:10px;letter-spacing:.19em;font-weight:850;color:var(--coral);text-transform:uppercase;margin-bottom:8px}
+    .micro-btn{border:1px solid #ddddE6;background:white;padding:7px 13px;border-radius:999px;color:#54576a;font-size:12px;font-weight:700;white-space:nowrap}
+    .micro-btn:hover{border-color:#d59a83}
+    .day-scroll{display:flex;gap:9px;overflow:auto;padding:4px 1px 12px;scrollbar-width:thin}
+    .day-tab{flex:0 0 auto;min-width:99px;border:1px solid #e3e2e8;border-radius:14px;background:#fff;padding:10px 12px;text-align:left;transition:.15s;box-shadow:0 2px 5px rgba(21,21,30,.02)}
+    .day-tab .day-top{font-weight:820;font-size:16px;letter-spacing:-.02em}
+    .day-tab .day-bottom{color:#777989;font-size:11px;white-space:nowrap}
+    .day-tab.active{background:#262439;border-color:#262439;color:white;box-shadow:0 8px 20px rgba(46,41,70,.15)}
+    .day-tab.active .day-bottom{color:#e2dce5}
+    .day-layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:20px;align-items:start}
+    .panel{background:white;border:1px solid #e9e7e8;border-radius:20px;box-shadow:0 7px 22px rgba(36,36,46,.035)}
+    .day-panel{padding:25px 27px}
+    .day-title{display:flex;align-items:start;justify-content:space-between;gap:14px;margin-bottom:8px}
+    .date-large{font-size:27px;font-weight:850;line-height:1.2;letter-spacing:-.04em}
+    .day-theme{color:#6a6c7d;font-size:13px;margin:4px 0 18px}
+    .pill{display:inline-flex;align-items:center;padding:5px 9px;border-radius:999px;font-size:11px;font-weight:750;white-space:nowrap;background:#eef1fa;color:#5868a4}
+    .pill.bos{background:#f4e8ff;color:#7960a3}
+    .pill.nyc{background:#fff0e5;color:#b36e44}
+    .event-list{position:relative}
+    .event-list:before{content:"";position:absolute;top:12px;bottom:15px;left:7px;width:1px;background:#ebe8ee}
+    .event{position:relative;display:grid;grid-template-columns:78px minmax(0,1fr);gap:12px;padding:0 0 23px 22px}
+    .event:last-child{padding-bottom:0}
+    .event:before{content:"";position:absolute;left:2px;top:8px;width:11px;height:11px;border:2px solid white;border-radius:50%;background:#d1a4aa;box-shadow:0 0 0 1px #e8d1d4}
+    .event-time{font-size:12px;white-space:pre-line;font-weight:780;color:#5d5e72;padding-top:3px}
+    .event-name{font-size:15px;font-weight:820;letter-spacing:-.012em;line-height:1.43}
+    .event-desc{font-size:13px;color:#646878;line-height:1.7;margin:6px 0 7px}
+    .event-hint{display:inline-block;background:#f6f6fa;color:#667086;font-size:11px;padding:3px 8px;border-radius:8px;margin-right:5px;font-weight:700}
+    .event-hint.sure{background:#eaf8f1;color:#27745c}
+    .event-hint.need{background:#fff1e8;color:#b76541}
+    .event-hint.idea{background:#f2f1fb;color:#6961a9}
+    .event-link{font-size:12px;font-weight:760;color:#986e5d;text-decoration:underline;text-underline-offset:3px;display:inline-block;margin:4px 8px 0 0}
+    .aside-panel{padding:22px}
+    .aside-panel h3,.note-panel h3{font-size:15px;margin:0 0 12px;letter-spacing:-.01em}
+    .aside-kicker{color:#a67b6d;letter-spacing:.1em;font-size:10px;font-weight:800;margin-bottom:7px}
+    .aside-text{font-size:13px;color:#606374;line-height:1.8;margin:0 0 13px}
+    .soft-box{background:#faf6f0;border:1px solid #f0e7dc;border-radius:13px;padding:13px;margin-bottom:13px}
+    .soft-box strong{font-size:13px}
+    .soft-box small{display:block;font-size:12px;color:#77727a;line-height:1.65;margin-top:3px}
+    .note-panel{padding:20px;margin-top:16px;background:#fafaff}
+    textarea{resize:vertical;min-height:108px;width:100%;border:1px solid #e5e3ea;background:white;border-radius:12px;padding:12px;font-size:13px;line-height:1.7;color:#323446;font-family:inherit}
+    .note-info{color:#8b8b96;font-size:11px;margin:6px 0 0}
+    .booking-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .booking-card{padding:22px 24px;position:relative;overflow:hidden}
+    .booking-card:before{content:"";position:absolute;width:78px;height:78px;border-radius:50%;background:#f5eff4;right:-28px;top:-40px}
+    .booking-icon{font-size:24px;margin-bottom:9px}
+    .booking-title{font-weight:820;font-size:17px;margin-bottom:5px}
+    .booking-desc{font-size:13px;color:var(--muted);line-height:1.8}
+    .task-card{padding:22px}
+    .progress-row{display:flex;align-items:center;justify-content:space-between;font-size:12px;color:var(--muted);margin-bottom:10px}
+    .bar{height:7px;border-radius:99px;background:#f1f0ef;overflow:hidden}
+    .bar>div{height:100%;width:0%;background:linear-gradient(90deg,#ed876b,#d7ad8b);border-radius:99px;transition:width .2s}
+    .tasks{margin-top:7px}
+    .task{display:flex;gap:11px;align-items:flex-start;border-bottom:1px solid #f1f0f0;padding:13px 3px;cursor:pointer}
+    .task:last-child{border-bottom:0}
+    .task input{accent-color:#d17b60;width:17px;height:17px;flex:0 0 auto;margin-top:4px}
+    .task strong{font-size:13px;display:block;font-weight:780}
+    .task small{font-size:12px;color:#888a96;display:block;margin-top:1px}
+    .task.done strong{text-decoration:line-through;color:#a4a4ae}
+    .info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+    .info-card{padding:22px}
+    .info-card h3{font-size:15px;margin:0 0 10px}
+    .info-card p{margin:0;color:#666b79;font-size:13px;line-height:1.8}
+    .info-card a{display:inline-block;font-size:12px;color:#9a684d;text-decoration:underline;text-underline-offset:3px;margin-top:9px;font-weight:750}
+    .important{background:#fff6ee;border:1px solid #f2e1d3;border-radius:13px;padding:12px 14px;font-size:12px;color:#775d53;line-height:1.7;margin-top:16px}
+    .footer{border-top:1px solid #ece9e5;padding:28px 0 44px;font-size:12px;color:#898995;display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .link-copy{border:none;background:#f1edea;color:#806a5d;border-radius:10px;font-size:12px;font-weight:800;padding:9px 13px}
+    .toast{position:fixed;bottom:25px;left:50%;transform:translateX(-50%) translateY(35px);background:#292536;color:white;padding:10px 16px;border-radius:999px;box-shadow:0 9px 30px #2224;z-index:20;opacity:0;pointer-events:none;transition:.2s;font-size:13px;white-space:nowrap}
+    .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+    @media(max-width:820px){.shell{padding:0 17px}.hero-inner{padding:45px 28px 100px}.hero-art{width:88%;height:63%;opacity:.45}.hero{min-height:375px}.hero-sub{max-width:400px}.head-metrics{margin:-24px 14px 30px}.day-layout{grid-template-columns:1fr}.aside-panel{order:2}.booking-grid,.info-grid{grid-template-columns:1fr 1fr}.nav-links{gap:11px}.nav-links a{font-size:12px}}
+    @media(max-width:550px){body{font-size:14px}.topnav{height:61px}.brand{font-size:14px}.nav-links a:nth-child(2){display:none}.hero{border-radius:21px;min-height:356px}.hero-inner{padding:37px 23px 115px}.hero-art{width:105%;height:65%;right:-65px;opacity:.57}.eyebrow{font-size:10px}.hero-sub{font-size:13px;line-height:1.7}.hero-badges{gap:6px;margin-top:21px}.hero-badges span{font-size:11px;padding:5px 8px}.head-metrics{grid-template-columns:repeat(2,1fr);gap:8px;margin:-20px 8px 29px}.metric{padding:13px 16px;border-radius:13px}.metric strong{font-size:19px}.section{margin-top:30px}.section-head{align-items:start}.section-head h2{font-size:22px}.day-panel{padding:20px 16px}.day-title .date-large{font-size:23px}.event{grid-template-columns:62px minmax(0,1fr);gap:8px;padding-left:20px;padding-bottom:21px}.event-name{font-size:14px}.event-desc{font-size:12px}.event-time{font-size:11px}.booking-grid,.info-grid{grid-template-columns:1fr}.footer{flex-direction:column;text-align:center}.day-tab{min-width:92px}}
+    @media print{body{background:white}.topnav,.day-scroll,.micro-btn,.note-panel,.task-card,.footer,.toast{display:none!important}.shell{padding:0 16px}.hero{min-height:230px;box-shadow:none}.hero-inner{padding:30px}.hero-art{opacity:.5}.head-metrics{margin:16px 0}.day-layout{display:block}.day-panel{box-shadow:none}.aside-panel{display:none}.section{page-break-inside:avoid}.event-list{page-break-inside:avoid}#itinerary-panel{display:block}.print-day{display:block!important;margin-bottom:18px}.print-day .panel{box-shadow:none}}
+  </style>
+</head>
+<body>
+  <header class="shell">
+    <div class="topnav">
+      <div class="brand"><span class="brand-mark">✦</span> 两个人的旅行手册</div>
+      <nav class="nav-links" aria-label="主要导航"><a href="#schedule">每日行程</a><a href="#booking">已确定</a><a href="#todo">待办清单</a></nav>
+    </div>
+    <div class="hero">
+      <div class="hero-inner">
+        <div class="eyebrow">A LITTLE TRIP, A BIG MEMORY</div>
+        <h1>去波士顿，<br><span class="outline">再去纽约。</span></h1>
+        <p class="hero-sub">哈佛的深秋、剑桥的晚风、纽约的感恩节和圣诞灯光。一起在城市里散步，收藏这八天的小小冒险。</p>
+        <div class="hero-badges"><span>📅 2026.11.21 — 11.28</span><span>📍 Boston · Cambridge · NYC</span><span>👭 双人旅行</span></div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 540 380" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg">
+          <defs><linearGradient id="b" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d7a68e"/><stop offset="1" stop-color="#896a89"/></linearGradient><linearGradient id="tower" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d49e91"/><stop offset="1" stop-color="#815b85"/></linearGradient></defs>
+          <circle cx="395" cy="95" r="56" fill="#f8ba9b" opacity=".89"/><g fill="#fff" opacity=".58"><circle cx="82" cy="83" r="2"/><circle cx="218" cy="48" r="2"/><circle cx="293" cy="114" r="1.7"/><circle cx="489" cy="36" r="2"/><circle cx="444" cy="164" r="1.5"/></g>
+          <path d="M14 180Q167 60 323 192" fill="none" stroke="#efc7b9" stroke-width="2" stroke-dasharray="5 7" opacity=".7"/>
+          <path d="M320 177l21 5-16 1-5 11-5-12-14-9z" fill="#ffe6cd" transform="rotate(9 320 177)"/>
+          <g fill="url(#b)"><path d="M15 262h46v94H15zM65 248h36v108H65zM106 270h42v86h-42zM152 239h34v117h-34zM188 258h27v98h-27z"/><path d="M35 244h24v17H35zM77 231h13v17H77zM159 223h15v16h-15z"/></g>
+          <g fill="#f4ddc6" opacity=".7"><path d="M21 284h8v10h-8zM37 284h8v10h-8zM21 304h8v10h-8zM77 274h7v9h-7zM115 291h8v9h-8zM161 260h7v9h-7zM199 287h7v9h-7z"/></g>
+          <g fill="url(#tower)"><path d="M216 213h41v143h-41zM265 227h48v129h-48zM324 185h55v171h-55zM389 224h37v132h-37zM435 198h45v158h-45zM487 237h45v119h-45z"/><path d="M334 173h34v15h-34zM348 148h6v28h-6zM449 181h17v18h-17z"/></g>
+          <g fill="#f8d6bf" opacity=".62"><path d="M228 245h7v10h-7zM243 245h7v10h-7zM228 267h7v10h-7zM279 251h8v11h-8zM299 251h8v11h-8zM338 211h7v12h-7zM355 211h7v12h-7zM338 240h7v12h-7zM355 240h7v12h-7zM404 252h7v10h-7zM446 224h7v11h-7zM462 224h7v11h-7zM499 263h7v12h-7z"/></g>
+          <path d="M0 346C115 336 210 349 290 344S453 333 540 344v36H0z" fill="#252339"/><path d="M0 355Q220 345 540 355" stroke="#f6bd9f" stroke-width="2" fill="none" opacity=".6"/>
+        </svg>
+      </div>
+    </div>
+    <div class="head-metrics"><div class="metric"><small>旅行日期</small><strong>8 天</strong></div><div class="metric"><small>城市</small><strong>2 座</strong></div><div class="metric"><small>节日主角</small><strong>感恩节 🎈</strong></div><div class="metric"><small>行程状态</small><strong>持续更新中</strong></div></div>
+  </header>
+
+  <main class="shell">
+    <section class="section" id="schedule">
+      <div class="section-head"><div><div class="small-label">DAY BY DAY</div><h2>我们的每日行程</h2><p class="sub">点日期切换 · 绿色已确定 / 橘色待预约 / 紫色建议</p></div><button class="micro-btn" id="copy-day" aria-label="复制当天行程">复制当天安排 ↗</button></div>
+      <div class="day-scroll" id="day-tabs" role="tablist" aria-label="选择日期"></div>
+      <div class="day-layout">
+        <div id="itinerary-panel" class="day-panel panel" aria-live="polite"></div>
+        <aside>
+          <div class="aside-panel panel" id="day-aside"></div>
+          <div class="note-panel panel"><h3>✍️ 我的旅行便签</h3><textarea id="day-note" placeholder="比如：想吃的东西、要带的衣服、拍照地点……" aria-label="这一天的个人便签"></textarea><p class="note-info">便签会保存在当前设备，不会自动同步给另一位朋友。</p></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="booking">
+      <div class="section-head"><div><div class="small-label">ALREADY BOOKED</div><h2>已经确定的大事</h2><p class="sub">以下是你们之前确定的信息；预订细节以订单为准。</p></div></div>
+      <div class="booking-grid">
+        <div class="panel booking-card"><div class="booking-icon">🚌</div><div class="booking-title">11月24日晚 · 去纽约</div><div class="booking-desc"><b>19:30</b> Boston（177 Huntington Ave）出发<br><b>23:45</b> 抵达 Manhattan（201 W 37th St）<br>CoachRun · 两人车票已买</div></div>
+        <div class="panel booking-card"><div class="booking-icon">🏠</div><div class="booking-title">纽约住宿 · 4晚</div><div class="booking-desc"><b>11/24入住 → 11/28退房</b><br>住在 Queens · Sunnyside 一带<br>11/24 晚抵达较晚，记得确认深夜入住；11/28 退房需安排寄存行李。</div></div>
+        <div class="panel booking-card"><div class="booking-icon">🎻</div><div class="booking-title">11月22日晚 · 室内乐</div><div class="booking-desc">Harvard Chamber Music Soirée · 19:30<br>Holden Chapel, Harvard Yard<br><b>活动已选，门票是否购买仍待确认</b></div></div>
+        <div class="panel booking-card"><div class="booking-icon">✈️</div><div class="booking-title">11月28日晚 · 返程</div><div class="booking-desc">朋友预计 <b>23:00 从 JFK 出发</b><br>建议按国际航班要求提前到机场。<br>为保护隐私，这里不公开乘客、航班号和具体住宿门牌。</div></div>
+      </div>
+    </section>
+
+    <section class="section" id="todo">
+      <div class="section-head"><div><div class="small-label">BEFORE WE GO</div><h2>出发前的待办清单</h2><p class="sub">可以打勾记录自己的进度；两个人的勾选暂时不会自动同步。</p></div></div>
+      <div class="panel task-card"><div class="progress-row"><span>预订进度</span><span id="task-progress">0 / 8 项</span></div><div class="bar"><div id="progress-fill"></div></div><div class="tasks" id="task-list"></div></div>
+    </section>
+
+    <section class="section" id="tips">
+      <div class="section-head"><div><div class="small-label">GOOD TO KNOW</div><h2>旅途小提醒</h2></div></div>
+      <div class="info-grid">
+        <div class="info-card panel"><h3>🪪 Harvard ID</h3><p>自然历史博物馆按 Harvard ID 持卡人带一位客人的优惠入场；Widener 周日12:00开门，阅览室到17:00。请携带实体 ID，并遵守访客区域要求。</p><a href="https://library.harvard.edu/libraries/widener" target="_blank" rel="noopener noreferrer">Widener 官方信息 ↗</a></div>
+        <div class="info-card panel"><h3>🗽 自由女神像</h3><p>目前优先考虑27日周五早上。从 Sunnyside 去 Battery Park 预留约45–60分钟，再留安检缓冲。船票未购买前，日期和时段仍可调整。</p><a href="https://www.cityexperiences.com/new-york/city-cruises/statue/" target="_blank" rel="noopener noreferrer">官方渡轮购票 ↗</a></div>
+        <div class="info-card panel"><h3>🌦️ 天气与路线</h3><p>11月底波士顿和纽约可能降雨、起风。海边和自由岛尤其注意防风。景点开放时间、游行管制、地铁线路以临近当天官方公告为准。</p><a href="https://www.mta.info/" target="_blank" rel="noopener noreferrer">纽约 MTA 交通 ↗</a></div>
+      </div>
+      <div class="important">🔒 <b>隐私提醒：</b> 如果把此页部署成公开链接，知道链接的人可能看到行程。本页故意不包含 Airbnb 详细门牌、个人手机号、乘客姓名或机票订单号。个人证件信息和预订确认单请只在私聊中发送。</div>
+    </section>
+  </main>
+  <footer class="shell footer"><span>Made for two ✦ Boston → New York · November 2026</span><span>轻量单文件 · 无外部图片 / 字体 / 脚本依赖 · 可离线打开</span></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script>
+  const data = [
+    {id:'21',date:'11.21',week:'周六',city:'BOSTON',cityClass:'bos',theme:'相见日 · 到达波士顿',tip:'今天不安排紧凑行程。朋友22:00左右抵达波士顿，优先接机、吃点东西、休息。',meal:'晚餐不强求，机场附近或回家后简单吃即可。',events:[
+      {time:'22:00',name:'朋友抵达波士顿',desc:'航班落地、取行李和出机场都可能需要时间。',status:'已确定',kind:'sure'},
+      {time:'夜间',name:'接机 / 回家 / 休息',desc:'为第二天的 Cambridge 一日游保留体力。',status:'建议',kind:'idea'}]},
+    {id:'22',date:'11.22',week:'周日',city:'CAMBRIDGE',cityClass:'bos',theme:'Harvard + MIT 校园深度游 · 室内乐之夜',tip:'这一天是旅行重点：Harvard Museum of Natural History 9:00开门；Widener 官方本周日12:00–20:00开放，阅览室12:00–17:00。傍晚提前返回 Harvard Yard。',meal:'午餐 Harvard Square：The Hourly Oyster House（海鲜）/ Harvest（美式）/ The Friendly Toast（brunch）。晚餐 MIT 附近：PAGU（创意融合）/ Area Four（披萨）/ Sumiao（湘菜）。餐厅尚未预约。',events:[
+      {time:'09:00\n11:00',name:'Harvard Museum of Natural History',desc:'玻璃花、化石和自然历史展。凭有效 Harvard ID 免费带一位朋友；现场按访客政策入场。',status:'免费凭ID',kind:'sure',link:'https://hmnh.harvard.edu/',linkText:'博物馆官网'},
+      {time:'11:20\n12:20',name:'Harvard Square 午餐',desc:'首选 The Hourly Oyster House；也可以根据当天胃口选择 Harvest 或 The Friendly Toast。',status:'待选餐厅',kind:'need',link:'https://www.thehourlycambridge.com/',linkText:'The Hourly'},
+      {time:'12:40\n13:35',name:'Widener Library 自行参观',desc:'你带 Harvard ID、朋友作为访客同行；不参加导览。阅览室到17:00。',status:'已确认开放',kind:'sure',link:'https://library.harvard.edu/libraries/widener',linkText:'图书馆官网'},
+      {time:'13:40\n16:30',name:'MIT 校园漫步',desc:'Harvard → MIT 建议乘红线；参观 Killian Court、MIT 主楼、Stata Center 和 Charles River。把户外拍照放在日落前。',status:'建议路线',kind:'idea'},
+      {time:'17:00\n18:15',name:'MIT 附近晚餐',desc:'首选 PAGU，备选 Area Four 或 Sumiao。吃完留足时间回 Harvard。',status:'待预约',kind:'need',link:'https://gopagu.com/',linkText:'PAGU 官网'},
+      {time:'19:30\n21:30',name:'Harvard Chamber Music Soirée',desc:'Holden Chapel，Harvard Yard 的校园室内乐。已选活动，记得确认两张票。',status:'待订票确认',kind:'need',link:'https://secure.touchnet.net/C20832_ustores/web/product_detail.jsp?PRODUCTID=8396&SINGLESTORE=true',linkText:'室内乐购票'}]},
+    {id:'23',date:'11.23',week:'周一',city:'BOSTON',cityClass:'bos',theme:'朋友自由探索 · 博物馆与城市书香',tip:'你白天需要上班，朋友可以自己安排节奏。以下是自由行建议而非已经订好的项目。',meal:'可在 Back Bay / Fenway 附近自由寻找午餐，晚上你们再碰面。',events:[
+      {time:'11:00\n13:00',name:'Isabella Stewart Gardner Museum（可选）',desc:'庭院和艺术收藏非常适合拍照；成人门票需根据官网时段预订。',status:'待购票',kind:'need',link:'https://www.gardnermuseum.org/',linkText:'博物馆官网'},
+      {time:'14:00\n16:00',name:'Boston Public Library + Copley Square',desc:'欣赏 Bates Hall、历史建筑，附近喝咖啡和散步。',status:'建议',kind:'idea',link:'https://www.bpl.org/',linkText:'BPL 官网'},
+      {time:'晚上',name:'一起吃晚饭 / 休息',desc:'第二天要带行李搭乘去纽约的大巴。',status:'自由安排',kind:'idea'}]},
+    {id:'24',date:'11.24',week:'周二',city:'BOSTON → NYC',cityClass:'bos',theme:'波士顿最后半天 · 晚上出发去纽约',tip:'这天的硬约束是19:30从177 Huntington Ave出发。不要把下午排得太满，更要留出回家取行李和吃饭的时间。',meal:'中午可在 Beacon Hill / Back Bay 吃；晚饭建议在出发前简单解决。',events:[
+      {time:'10:00\n13:00',name:'Boston Common + Beacon Hill（建议）',desc:'拍红砖街景、公园和 Acorn Street。也可改为前两天没去成的景点。',status:'可调整',kind:'idea'},
+      {time:'14:00\n17:30',name:'午餐后取行李、休息',desc:'检查车票、行李与 Airbnb 深夜入住安排。',status:'重要',kind:'sure'},
+      {time:'18:45',name:'到达 CoachRun 候车点',desc:'177 Huntington Ave, Boston。尽量提前候车。',status:'车票已买',kind:'sure'},
+      {time:'19:30\n23:45',name:'Boston → New York 大巴',desc:'预计在 201 W 37th St, Manhattan 下车，随后前往 Queens 的 Sunnyside 住宿。',status:'车票已买',kind:'sure'},
+      {time:'深夜',name:'Airbnb 入住',desc:'由于实际到住处可能过午夜，请事先确认自助入住方法。',status:'待确认',kind:'need'}]},
+    {id:'25',date:'11.25',week:'周三',city:'NEW YORK',cityClass:'nyc',theme:'慢慢开始纽约 · 经典中城与气球',tip:'24日晚抵达很晚，今天不用太早起。自由女神像暂时优先排到27日，以免25日早起赶船和下午活动太紧。',meal:'Bryant Park、Midtown 午餐可以临时决定。感恩节前晚热门餐厅建议订位。',events:[
+      {time:'10:30\n13:00',name:'Grand Central + 纽约公共图书馆 + Bryant Park',desc:'中城经典路线，冬季市集和拍照；室内、室外可灵活切换。',status:'建议',kind:'idea'},
+      {time:'13:00\n17:00',name:'Macy’s 感恩节气球充气观赏',desc:'通常在自然历史博物馆周边举行，具体2026年公众入口和时间请临近以官方公告为准。',status:'免费 / 待核实',kind:'idea',link:'https://www.macys.com/s/parade/',linkText:'Macy’s 官方'},
+      {time:'傍晚',name:'第五大道 + Rockefeller Center + 时代广场',desc:'逛纽约灯饰和繁华街景；11月还不是圣诞树正式点灯的时间。',status:'建议',kind:'idea'}]},
+    {id:'26',date:'11.26',week:'周四',city:'NEW YORK',cityClass:'nyc',theme:'感恩节百年游行 · 城市节日',tip:'游行免费观看，但热门观看区域需要尽早占位，现场可能封路。安排清晨出发，注意保暖和厕所。',meal:'感恩节当日很多餐厅调整营业。晚餐若想吃正式套餐，建议提前预约两个人。',events:[
+      {time:'清晨',name:'提前前往游行观看路段',desc:'先核实官方开放观赏区。带保暖外套、雨具、少量早餐和充电宝。',status:'准备事项',kind:'need'},
+      {time:'08:30\n11:30',name:'Macy’s Thanksgiving Day Parade',desc:'看巨型气球、花车、乐队和百年庆典。路边观看免费，无需普通入场票。',status:'免费',kind:'sure',link:'https://www.macys.com/s/parade/',linkText:'游行官方信息'},
+      {time:'下午',name:'Brooklyn Bridge + DUMBO（看体力和天气）',desc:'逛河岸与桥边街景；如果累了，直接换成咖啡馆和休息。',status:'建议',kind:'idea'},
+      {time:'傍晚',name:'感恩节晚餐',desc:'优先安排两人席位；餐厅、预算和时段尚未最终定。',status:'待预约',kind:'need'}]},
+    {id:'27',date:'11.27',week:'周五',city:'NEW YORK',cityClass:'nyc',theme:'自由女神像 · 黑色星期五',tip:'优先考虑周五上午登岛：比周三稍暖，而且25日不必早起。天气预报会变，购买日期和票种前需再次核对。',meal:'下午看购物节奏安排午餐和晚餐；若要看 Rockettes 圣诞演出，应预留19:00场次的交通和入场时间。',events:[
+      {time:'07:45\n08:45',name:'从 Sunnyside 前往 Battery Park',desc:'地铁预计约45–60分钟，再留安检时间。登船点在 Castle Clinton 附近。',status:'预计路线',kind:'idea'},
+      {time:'上午\n中午',name:'自由女神像登岛',desc:'建议购两张官方往返渡轮票，优先查 Pedestal Reserve（基座票）或普通登岛票。是否去 Ellis Island 视时间而定。',status:'待购票',kind:'need',link:'https://statuecitycruises.com/',linkText:'官方购票'},
+      {time:'下午',name:'Black Friday 购物 + 第五大道',desc:'购物不必覆盖所有店，选择特别想逛的区域。',status:'建议',kind:'idea'},
+      {time:'晚上',name:'Radio City Rockettes（可选）',desc:'圣诞演出是可选的，若决定看需两张票，留出地铁时间。',status:'可选 / 待购票',kind:'need',link:'https://www.rockettes.com/christmas/',linkText:'演出官网'}]},
+    {id:'28',date:'11.28',week:'周六',city:'NEW YORK → JFK',cityClass:'nyc',theme:'纽约的最后一天 · 晚上飞行',tip:'11:00前从 Queens 的住处退房；朋友23:00从JFK出发。不要安排耗时过长的跨区活动，行李寄存和机场交通是重点。',meal:'轻松吃午餐和一顿早晚餐，机场出发前别赶得太紧。',events:[
+      {time:'11:00前',name:'退房 / 寄存行李',desc:'提前确认房东是否能寄存；否则找信誉可靠的第三方寄存服务。',status:'待确认',kind:'need'},
+      {time:'中午\n下午',name:'SoHo / Chelsea Market / 9·11 纪念广场',desc:'从其中选择1–2个，不建议全部硬塞；如果下雨就把 Chelsea Market 放优先。',status:'灵活安排',kind:'idea'},
+      {time:'18:00左右',name:'取行李，出发前往 JFK',desc:'预留地铁或 LIRR + AirTrain 时间，考虑节假日延误。',status:'重要',kind:'sure',link:'https://www.jfkairport.com/to-from-airport/air-train',linkText:'JFK 交通'},
+      {time:'23:00',name:'朋友从 JFK 返程',desc:'国际航班一般建议提前约3小时到机场，以实际航空公司要求为准。',status:'航班已定',kind:'sure'}]}
+  ];
+  const tasks = [
+    {id:'concert',title:'确认 11/22 Harvard 室内乐两张票',sub:'Holden Chapel · 19:30'},
+    {id:'lunch',title:'决定 11/22 Harvard Square 午餐',sub:'The Hourly / Harvest / Friendly Toast'},
+    {id:'dinner22',title:'决定 11/22 MIT 附近晚餐',sub:'PAGU / Area Four / Sumiao'},
+    {id:'checkin',title:'联系 Airbnb 确认 11/24 午夜后入住',sub:'到纽约是23:45，去住处还需时间'},
+    {id:'statue',title:'购买 11/27 自由女神像两张票',sub:'先看天气、上午基座票或普通登岛票'},
+    {id:'dinner26',title:'预约 11/26 感恩节晚餐（2人）',sub:'先定预算、区域和时间'},
+    {id:'show',title:'决定是否购买 Rockettes 演出票',sub:'备选11/27晚，不是必去'},
+    {id:'bags',title:'确定 11/28 行李寄存与 JFK 路线',sub:'11:00退房、23:00航班'}
+  ];
+  const storage = {get(k,otherwise){try{return JSON.parse(localStorage.getItem(k)) ?? otherwise}catch{return otherwise}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch{}}};
+  const safe = x => String(x).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  let current = storage.get('trip-selected-day','22');if(!data.some(d=>d.id===current))current='22';
+  const tabs=document.getElementById('day-tabs'),detail=document.getElementById('itinerary-panel'),aside=document.getElementById('day-aside'),note=document.getElementById('day-note');
+  function renderDays(){tabs.innerHTML=data.map(d=>`<button role="tab" aria-selected="${current===d.id}" class="day-tab ${current===d.id?'active':''}" data-day="${d.id}"><div class="day-top">${d.date}</div><div class="day-bottom">${d.week} · ${d.city.replace(' → NYC','')}</div></button>`).join('');tabs.querySelectorAll('button').forEach(b=>b.addEventListener('click',()=>{current=b.dataset.day;storage.set('trip-selected-day',current);renderDays();document.getElementById('itinerary-panel').scrollIntoView({block:'nearest',behavior:'smooth'});}));
+    const d=data.find(d=>d.id===current);
+    detail.innerHTML=`<div class="day-title"><div><div class="date-large">${safe(d.date)} <span style="font-size:15px;color:#8d8a95;font-weight:650">${safe(d.week)}</span></div><div class="day-theme">${safe(d.theme)}</div></div><span class="pill ${d.cityClass}">${safe(d.city)}</span></div><div class="event-list">${d.events.map(e=>`<div class="event"><div class="event-time">${safe(e.time)}</div><div><div class="event-name">${safe(e.name)}</div><div class="event-desc">${safe(e.desc)}</div><span class="event-hint ${e.kind}">${safe(e.status)}</span>${e.link?`<a class="event-link" target="_blank" rel="noopener noreferrer" href="${safe(e.link)}">${safe(e.linkText)} ↗</a>`:''}</div></div>`).join('')}</div>`;
+    aside.innerHTML=`<div class="aside-kicker">TODAY'S LITTLE TIP</div><h3>💡 这一天的小提醒</h3><p class="aside-text">${safe(d.tip)}</p><div class="soft-box"><strong>🍽️ 两个人吃什么？</strong><small>${safe(d.meal)}</small></div><button class="micro-btn" id="copy-address" style="width:100%">📋 复制这天的安排</button>`;
+    document.getElementById('copy-address').addEventListener('click',copyDay);
+    note.value=storage.get('trip-note-'+current,'');
+  }
+  let noteTimeout;note.addEventListener('input',()=>{clearTimeout(noteTimeout);const id=current,val=note.value;noteTimeout=setTimeout(()=>storage.set('trip-note-'+id,val),150)});
+  function dayText(d){return `${d.date} ${d.week} · ${d.theme}\n`+d.events.map(e=>`${e.time.replace('\n','-')}  ${e.name}\n${e.desc}`).join('\n')+`\n提示：${d.tip}`;}
+  function toast(msg){const el=document.getElementById('toast');el.textContent=msg;el.classList.add('show');clearTimeout(window.toastTimer);window.toastTimer=setTimeout(()=>el.classList.remove('show'),2200);}
+  async function copyText(t){try{if(navigator.clipboard && window.isSecureContext){await navigator.clipboard.writeText(t)}else{const tEl=document.createElement('textarea');tEl.value=t;document.body.appendChild(tEl);tEl.select();document.execCommand('copy');tEl.remove()}toast('已复制，可以发给朋友啦 ✨')}catch{toast('复制失败，可以手动选中页面文字')}}
+  function copyDay(){const d=data.find(d=>d.id===current);copyText(dayText(d));}
+  document.getElementById('copy-day').addEventListener('click',copyDay);
+  const taskList=document.getElementById('task-list');const checked=new Set(storage.get('trip-tasks',[]));
+  function renderTasks(){taskList.innerHTML=tasks.map(t=>`<label class="task ${checked.has(t.id)?'done':''}"><input type="checkbox" data-task="${t.id}" ${checked.has(t.id)?'checked':''}/><div><strong>${safe(t.title)}</strong><small>${safe(t.sub)}</small></div></label>`).join('');taskList.querySelectorAll('input').forEach(i=>i.addEventListener('change',()=>{if(i.checked)checked.add(i.dataset.task);else checked.delete(i.dataset.task);storage.set('trip-tasks',[...checked]);renderTasks();}));document.getElementById('task-progress').textContent=`${checked.size} / ${tasks.length} 项`;document.getElementById('progress-fill').style.width=`${100*checked.size/tasks.length}%`}
+  renderDays();renderTasks();
+  </script>
+</body>
+</html>
